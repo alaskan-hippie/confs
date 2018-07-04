@@ -1,0 +1,8 @@
+I3 as drop in WM notes!!!!
+
+cinnamon uses Muffin as window manager. make script similar to as follows and add to autostart:
+---
+#!/bin/bash
+killall muffin
+i3
+---

@@ -1,0 +1,2 @@
+
+xrandr --output VGA-1 --right-of HDMI-1 --output HDMI-1 --right-of HDMI-3

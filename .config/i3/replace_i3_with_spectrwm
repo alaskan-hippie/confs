@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pgrep -ia -u $USER i3 > i3_kill 2>&1
+
+NOW=$(date +"%D - %T")
+
+echo "$NOW" > i3_killed
+
+for i in `cut -d ' ' -f1 i3_kill`; do
+  echo  "Killing $i" >> i3_killed
+  kill -9 $i
+done
+
+~/.bin/spectrwm

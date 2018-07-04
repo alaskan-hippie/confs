@@ -1,0 +1,12 @@
+# To open the usual panes, after verifying rp:
+split-window -h vim -c 'set shortmess+=I'
+split-window -v vim -c 'set shortmess+=I'
+split-window -h
+split-window -v -t 0
+# Name the usual panes
+selectp -t 0 -T main
+selectp -t 1 -T top
+selectp -t 2 -T reply
+selectp -t 3 -T notes
+selectp -t 4 -t local
+
